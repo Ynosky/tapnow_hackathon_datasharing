@@ -30,12 +30,16 @@
 - 最終脚本 Ver.4：[story.md](story.md)
 - 元資料：[Final Report Ver 4.html](sources/Final%20Report%20Ver%204.html)
 - 世界観の参考画像：[world-reference.jpg](assets/world-reference.jpg)
-- キャラクターの参考画像：[character-reference.jpg](assets/character-reference.jpg)
+- キャラクターの参考画像：[character-reference.jpg](assets/character-reference.jpg)（原脚本の旧参照）
+- 白い研究所の環境シート：[white-lab-environment-sheet.webp](assets/white-lab-environment-sheet.webp)（2026-10-16 にチャットで受領）
+- 参照素材の固定文（ユナ・ミオ・温室）：[story.md](story.md#参照素材の固定文) に保存
 - 画像プロンプトの必須共通冒頭文：`image_prompts.md` に保存済み
 - 過去の制作 Markdown：12件を [資料索引](sources/README.md) と [原本フォルダ](sources/2026-10-16/) に保存
 - 画像用と確認できる過去プロンプト：9件（`IMG-001`～`IMG-009`）を [image_prompts.md](image_prompts.md) に原文のまま集約
 - 用途未確認のカット資料：3件（線路の導入・傷跡がない手首・指切りと花びら）。原本を保存し、[索引](sources/README.md#用途未確認のカット資料) に記録
-- 動画用と確認できるプロンプト：未登録。今回、画像・動画の生成実行なし
+- 動画プロンプト：共有チャットの旧版 `VID-001` と、最新指示を反映したPROLOGUE 24秒案 `VID-002` を [video_prompts.md](video_prompts.md) に全文保存。動画生成は未実施
+- PROLOGUEコピー用：[24秒プロンプトのみ.md](prompts/PROLOGUE_24秒_プロンプトのみ.md)。新しいユナ・研究所・キメラ画像は未取得のため、素材名を実際の生成画面で対応付けて使用
+- 動画の共通英文10段落、旧プロンプト本文、今回の改訂指示・手元だけの指切りという追加回答を [資料索引](sources/README.md) に追加
 - 制作資料に記載された空間仕様・更新関係・未承認の案・脚本との差分：[story.md](story.md) に出典とともに記録
 
 ## ローカル資料の取り込み状況
@@ -49,5 +53,7 @@
 2026-10-16（日本時間）、このクラウド作業環境には上記フォルダも `/Users` も存在せず、フォルダ内の資料は取得できていません。上記の保存済み資料を、このローカルフォルダから取り込んだものとしては扱いません。
 
 その後、ユーザーが添付した過去の Markdown 12件は受領・保存済みです。これによって、ローカルフォルダ全体を取得済みとするものではありません。
+
+共有チャット「脚本をシーン別Klingプロンプト化」の旧プロローグ全文と制作ルールは、チャット記録から取得しました。同チャットのMac側の `/Users/watanabeharuhi/Documents/動画制作/返り咲き_Kling4` はこの環境に存在せず、画像・絵コンテ・ローカルファイルの直接取得はできていません。GitHubの脚本HTML、参考画像2点、制作Markdown12件はチェックアウト済みです。今回指定のミナ・ユナ・白い研究所・キメラの新しい画像実体は未取得で、既存画像で代用していません。
 
 追加資料を取り込むには、フォルダを ZIP にしてこのチャットへ添付するか、このリポジトリへ追加してください。受領した原本と素材を保持し、内容を確認してストーリー・画像プロンプト・動画プロンプトへ整理します。
