@@ -1,0 +1,56 @@
+{
+  "date_jst": "2026-10-16",
+  "status": "generated_candidates_not_adopted",
+  "images": [
+    {
+      "id": "IMG-010",
+      "name": "丘上からの中央全景",
+      "file": "01_ridge_panorama.png",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "sha256": "65b8cc3f1ce054e6277cfaac4ee81847bb5e9b121925ac6bdfcee3aa775839a8"
+    },
+    {
+      "id": "IMG-011",
+      "name": "荒野と植生の広がり",
+      "file": "02_wild_plain.png",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "sha256": "89c11343cdee11ffa0b5956d0d13c35056aabfcdd8faee2112b76dd6b547f93e"
+    },
+    {
+      "id": "IMG-012",
+      "name": "水路から見渡す中央域",
+      "file": "03_river_overlook.png",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "sha256": "16ab2dd09f5bae4e13a145502668e8245d8b0de42b2603d9df7fcf6b134c0225"
+    },
+    {
+      "id": "IMG-013",
+      "name": "岩稜越しの原生林全景",
+      "file": "04_rocky_basin.png",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "sha256": "c4fab7ec5ce78be2c4212bca789af64de7c774200272e2a0f2d8af522526f6f7"
+    },
+    {
+      "id": "IMG-014",
+      "name": "高所俯瞰で示すドーム内部",
+      "file": "05_high_oblique.png",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "sha256": "208c37cf34eb0d2c5e1c5dba373a1bc544c6b0f4a1f1b62765a0e78994e37ced"
+    }
+  ]
+}

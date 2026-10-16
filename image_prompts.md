@@ -2,7 +2,7 @@
 
 『返り咲き』の画像生成用プロンプトを追記して管理します。現在のストーリーは [story.md](story.md)、動画用は [video_prompts.md](video_prompts.md) を参照してください。
 
-受領した過去の画像プロンプト9件を記録しています。添付 HTML の参考画像は `assets/` に保存していますが、その2点に使用されたプロンプトは資料に記載されていません。
+受領した過去の画像プロンプト9件に加え、ACT 1 SCENE 01の全景リファレンス5案（IMG-010〜IMG-014）を生成・保存しました。5案は比較用で、採用は未確定です。添付 HTML の参考画像は `assets/` に保存していますが、その2点に使用されたプロンプトは資料に記載されていません。
 
 ## 必須の共通冒頭文
 
@@ -480,3 +480,178 @@ Avoid: any change to the silhouette, crown width, trunk or root shapes, brown or
 #### 原資料のメモ（そのまま）
 
 A（白）の出力をユーザーが採用したあと、その画像を Image 1 にして編集で作る前提（シルエットを確実に揃えるため）。幹・枝・根の色だけ茶色に変え、白い花・花のベッド・赤い根は残す（AIの判断。花も変えるかは未確認）。冒頭は other/kaerizaki_style_preamble。推奨設定（未実行）：Aと同じ size・quality。
+
+
+### IMG-010｜ACT 1 SCENE 01 全景案：丘上からの中央全景
+
+- 日付（日本時間）：2026-10-16
+- 対象：ACT 1 SCENE 01「花の街」、シーン内4〜8秒の全景リファレンス候補。
+- 参照ストーリー版：Ver.4＋2026-10-16の会話更新、作業基点07c3a1a。
+- 状態：内蔵 image_gen で画像生成実行済み。出力を目視確認しPNGを保存。ユーザーの採用は未確定、動画生成は未実施。
+- 設定：横長16:9をプロンプトで指定。実出力1672×941px。背景不透明。
+- 参照画像：入力なし。共有英文・脚本・今回の世界観指定から新規生成。人物や未取得のキャラクター画像は使用していない。
+- 出力：[画像](assets/act1_scene01_dome_options/01_ridge_panorama.png) ／ [5案比較](assets/act1_scene01_dome_options/README.md)
+- 生成元ファイル名：exec-ac9502a9-9999-4eee-a789-2d7924a64a51.png
+- SHA-256：65b8cc3f1ce054e6277cfaac4ee81847bb5e9b121925ac6bdfcee3aa775839a8
+- 視点・地形・河川・小型温室の配置は今回の比較案。別々の生成であり、5枚の地理的一致は保証しない。ドームの厳密な寸法は指定していない。
+
+#### プロンプト全文
+
+```text
+Photorealistic live-action Japanese dark fantasy mystery film, grounded cinematic realism, intimate and haunting atmosphere, subtle biological horror, beautiful yet deeply unsettling.
+Authentic Japanese teenage characters with natural facial proportions, realistic East Asian features, subtle facial asymmetry, natural skin pores, delicate skin texture, faint blemishes, realistic complexion, restrained makeup, natural dark hair with individual strands and subtle imperfections.
+Minimalist vintage Japanese-inspired clothing, simple silhouettes, natural cotton and linen fabrics, slightly worn textures, muted ivory, warm off-white, faded olive gray, earthy taupe, desaturated brown and restrained dark crimson accents.
+Soft diffused natural lighting, delicate shadow transitions, subdued highlights, realistic exposure, rich but restrained tonal depth, slightly desaturated organic color grading, soft warm skin tones, pale neutral whites, deep botanical greens, natural cinematic contrast.
+Naturalistic film cinematography, subtle 35mm film grain, realistic photographic textures, gentle depth of field, atmospheric perspective, physically believable environments and materials, carefully composed frames, quiet visual storytelling.
+A world where overwhelming natural beauty coexists with grotesque biological abnormalities. Organic life feels elegant, sacred and disturbingly unfamiliar. White flowers, delicate translucent leaves, abnormal plant anatomy, faint crimson veins, subtle signs of genetic alteration.
+Restrained performances, believable body language, subtle facial expressions, psychological tension conveyed through silence, observation and physical details rather than exaggerated acting.
+Premium independent Japanese live-action fantasy cinema, visually cohesive, understated, atmospheric, emotionally unsettling, anatomically convincing, never glossy or overly stylized.
+Preserve the exact identities, hairstyles, facial landmarks, costume silhouettes, clothing materials and proportions established by the provided character reference images.
+Adapt camera angle, shot scale, lighting and environment to the specific scene while maintaining one consistent cinematic visual language.
+
+Create ONE landscape 16:9 cinematic reference image, no collage, no storyboard panels, no text. This is the opening establishing view for ACT 1 SCENE 01, its local 4–8 second portion, of the original film KAERIZAKI. Environment only: no people or character sheets. The view must immediately explain an immense enclosed wilderness, the central area of a colossal transparent glass dome. Convey primal expedition awe and majestic yet uneasy biological beauty through an original location.
+Inside one continuous enormous aged iron-and-glass dome is an entire kilometer-scale landscape: deep botanical-green jungle, giant ferns, mossy rock, irregular weathered terrain, pale wild grass clearings, scattered small white flowers, a winding narrow river and a central ivory-white mother tree with a broad, low spreading crown. This tree is large compared with ordinary trees yet much smaller than the distant dome ceiling; enormous empty air separates its crown from the roof. The roof remains transparent, with believable thin distant curved ribs and glass divisions receding into atmospheric haze; show its enclosing curve and opposing sides so it cannot read as open sky or an ordinary greenhouse. Soft overcast daylight passes through glass; a little distant ground mist, not thick fog hiding the scene. Strong foreground/middle-distance/far-distance scale layering. Muted organic greens, ivory, wet gray-brown stone; natural photographic exposure, quiet 35mm grain. A very small old town, if visible, must be entirely inside one small secondary glass greenhouse far from the foreground; vegetation and wilderness dominate the composition.
+Use a believable large-format film location photograph with restrained practical-VFX realism. No futuristic clean geodesic museum atrium, shopping mall, luxury resort, city skyline, modern streets, theme-park gates, logos, dinosaurs, giant animals, exterior open-sky landscape, cutaway roof, roof holes, multi-panel layout, captions or watermark. No saturated fantasy glow or videogame render. This is a static reference frame, not a video or a camera-motion diagram.
+
+Camera option 1: a high natural ridge just inside the dome perimeter, about treetop height above the central valley, rectilinear 24mm lens. A majestic balanced panorama looking toward the central white tree, distant opposing dome wall and broad roof curve occupying the top third. The winding river leads from lower center to the tree. A few fern silhouettes and damp rough rock at the bottom corners frame the view without obstructing it. Show the whole central basin at a glance; this is the clearest geography-establishing master view.
+```
+
+
+### IMG-011｜ACT 1 SCENE 01 全景案：荒野と植生の広がり
+
+- 日付（日本時間）：2026-10-16
+- 対象：ACT 1 SCENE 01「花の街」、シーン内4〜8秒の全景リファレンス候補。
+- 参照ストーリー版：Ver.4＋2026-10-16の会話更新、作業基点07c3a1a。
+- 状態：内蔵 image_gen で画像生成実行済み。出力を目視確認しPNGを保存。ユーザーの採用は未確定、動画生成は未実施。
+- 設定：横長16:9をプロンプトで指定。実出力1672×941px。背景不透明。
+- 参照画像：入力なし。共有英文・脚本・今回の世界観指定から新規生成。人物や未取得のキャラクター画像は使用していない。
+- 出力：[画像](assets/act1_scene01_dome_options/02_wild_plain.png) ／ [5案比較](assets/act1_scene01_dome_options/README.md)
+- 生成元ファイル名：exec-069f0d16-9d88-42d9-9f9f-b0864c94b22b.png
+- SHA-256：89c11343cdee11ffa0b5956d0d13c35056aabfcdd8faee2112b76dd6b547f93e
+- 視点・地形・河川・小型温室の配置は今回の比較案。別々の生成であり、5枚の地理的一致は保証しない。ドームの厳密な寸法は指定していない。
+
+#### プロンプト全文
+
+```text
+Photorealistic live-action Japanese dark fantasy mystery film, grounded cinematic realism, intimate and haunting atmosphere, subtle biological horror, beautiful yet deeply unsettling.
+Authentic Japanese teenage characters with natural facial proportions, realistic East Asian features, subtle facial asymmetry, natural skin pores, delicate skin texture, faint blemishes, realistic complexion, restrained makeup, natural dark hair with individual strands and subtle imperfections.
+Minimalist vintage Japanese-inspired clothing, simple silhouettes, natural cotton and linen fabrics, slightly worn textures, muted ivory, warm off-white, faded olive gray, earthy taupe, desaturated brown and restrained dark crimson accents.
+Soft diffused natural lighting, delicate shadow transitions, subdued highlights, realistic exposure, rich but restrained tonal depth, slightly desaturated organic color grading, soft warm skin tones, pale neutral whites, deep botanical greens, natural cinematic contrast.
+Naturalistic film cinematography, subtle 35mm film grain, realistic photographic textures, gentle depth of field, atmospheric perspective, physically believable environments and materials, carefully composed frames, quiet visual storytelling.
+A world where overwhelming natural beauty coexists with grotesque biological abnormalities. Organic life feels elegant, sacred and disturbingly unfamiliar. White flowers, delicate translucent leaves, abnormal plant anatomy, faint crimson veins, subtle signs of genetic alteration.
+Restrained performances, believable body language, subtle facial expressions, psychological tension conveyed through silence, observation and physical details rather than exaggerated acting.
+Premium independent Japanese live-action fantasy cinema, visually cohesive, understated, atmospheric, emotionally unsettling, anatomically convincing, never glossy or overly stylized.
+Preserve the exact identities, hairstyles, facial landmarks, costume silhouettes, clothing materials and proportions established by the provided character reference images.
+Adapt camera angle, shot scale, lighting and environment to the specific scene while maintaining one consistent cinematic visual language.
+
+Create ONE landscape 16:9 cinematic reference image, no collage, no storyboard panels, no text. This is the opening establishing view for ACT 1 SCENE 01, its local 4–8 second portion, of the original film KAERIZAKI. Environment only: no people or character sheets. The view must immediately explain an immense enclosed wilderness, the central area of a colossal transparent glass dome. Convey primal expedition awe and majestic yet uneasy biological beauty through an original location.
+Inside one continuous enormous aged iron-and-glass dome is an entire kilometer-scale landscape: deep botanical-green jungle, giant ferns, mossy rock, irregular weathered terrain, pale wild grass clearings, scattered small white flowers, a winding narrow river and a central ivory-white mother tree with a broad, low spreading crown. This tree is large compared with ordinary trees yet much smaller than the distant dome ceiling; enormous empty air separates its crown from the roof. The roof remains transparent, with believable thin distant curved ribs and glass divisions receding into atmospheric haze; show its enclosing curve and opposing sides so it cannot read as open sky or an ordinary greenhouse. Soft overcast daylight passes through glass; a little distant ground mist, not thick fog hiding the scene. Strong foreground/middle-distance/far-distance scale layering. Muted organic greens, ivory, wet gray-brown stone; natural photographic exposure, quiet 35mm grain. A very small old town, if visible, must be entirely inside one small secondary glass greenhouse far from the foreground; vegetation and wilderness dominate the composition.
+Use a believable large-format film location photograph with restrained practical-VFX realism. No futuristic clean geodesic museum atrium, shopping mall, luxury resort, city skyline, modern streets, theme-park gates, logos, dinosaurs, giant animals, exterior open-sky landscape, cutaway roof, roof holes, multi-panel layout, captions or watermark. No saturated fantasy glow or videogame render. This is a static reference frame, not a video or a camera-motion diagram.
+
+Camera option 2: low natural rocky terrace, 1.6m camera height, rectilinear 21mm lens. Broad open wild grass-and-rock plain in the foreground, scattered giant ferns and fallen weathered trunks, dense jungle bordering both sides. Ground texture gives human-scale evidence. The central white tree rises in the distant middle and the dome sweeps enormously overhead. Preserve a long unobstructed sightline across the entire central area; no foreground plant fills the frame. Primal wilderness and the enclosing glass roof have equal visual importance.
+```
+
+
+### IMG-012｜ACT 1 SCENE 01 全景案：水路から見渡す中央域
+
+- 日付（日本時間）：2026-10-16
+- 対象：ACT 1 SCENE 01「花の街」、シーン内4〜8秒の全景リファレンス候補。
+- 参照ストーリー版：Ver.4＋2026-10-16の会話更新、作業基点07c3a1a。
+- 状態：内蔵 image_gen で画像生成実行済み。出力を目視確認しPNGを保存。ユーザーの採用は未確定、動画生成は未実施。
+- 設定：横長16:9をプロンプトで指定。実出力1672×941px。背景不透明。
+- 参照画像：入力なし。共有英文・脚本・今回の世界観指定から新規生成。人物や未取得のキャラクター画像は使用していない。
+- 出力：[画像](assets/act1_scene01_dome_options/03_river_overlook.png) ／ [5案比較](assets/act1_scene01_dome_options/README.md)
+- 生成元ファイル名：exec-0184699c-07b8-4c73-89bb-856bfdfd04b0.png
+- SHA-256：16ab2dd09f5bae4e13a145502668e8245d8b0de42b2603d9df7fcf6b134c0225
+- 視点・地形・河川・小型温室の配置は今回の比較案。別々の生成であり、5枚の地理的一致は保証しない。ドームの厳密な寸法は指定していない。
+
+#### プロンプト全文
+
+```text
+Photorealistic live-action Japanese dark fantasy mystery film, grounded cinematic realism, intimate and haunting atmosphere, subtle biological horror, beautiful yet deeply unsettling.
+Authentic Japanese teenage characters with natural facial proportions, realistic East Asian features, subtle facial asymmetry, natural skin pores, delicate skin texture, faint blemishes, realistic complexion, restrained makeup, natural dark hair with individual strands and subtle imperfections.
+Minimalist vintage Japanese-inspired clothing, simple silhouettes, natural cotton and linen fabrics, slightly worn textures, muted ivory, warm off-white, faded olive gray, earthy taupe, desaturated brown and restrained dark crimson accents.
+Soft diffused natural lighting, delicate shadow transitions, subdued highlights, realistic exposure, rich but restrained tonal depth, slightly desaturated organic color grading, soft warm skin tones, pale neutral whites, deep botanical greens, natural cinematic contrast.
+Naturalistic film cinematography, subtle 35mm film grain, realistic photographic textures, gentle depth of field, atmospheric perspective, physically believable environments and materials, carefully composed frames, quiet visual storytelling.
+A world where overwhelming natural beauty coexists with grotesque biological abnormalities. Organic life feels elegant, sacred and disturbingly unfamiliar. White flowers, delicate translucent leaves, abnormal plant anatomy, faint crimson veins, subtle signs of genetic alteration.
+Restrained performances, believable body language, subtle facial expressions, psychological tension conveyed through silence, observation and physical details rather than exaggerated acting.
+Premium independent Japanese live-action fantasy cinema, visually cohesive, understated, atmospheric, emotionally unsettling, anatomically convincing, never glossy or overly stylized.
+Preserve the exact identities, hairstyles, facial landmarks, costume silhouettes, clothing materials and proportions established by the provided character reference images.
+Adapt camera angle, shot scale, lighting and environment to the specific scene while maintaining one consistent cinematic visual language.
+
+Create ONE landscape 16:9 cinematic reference image, no collage, no storyboard panels, no text. This is the opening establishing view for ACT 1 SCENE 01, its local 4–8 second portion, of the original film KAERIZAKI. Environment only: no people or character sheets. The view must immediately explain an immense enclosed wilderness, the central area of a colossal transparent glass dome. Convey primal expedition awe and majestic yet uneasy biological beauty through an original location.
+Inside one continuous enormous aged iron-and-glass dome is an entire kilometer-scale landscape: deep botanical-green jungle, giant ferns, mossy rock, irregular weathered terrain, pale wild grass clearings, scattered small white flowers, a winding narrow river and a central ivory-white mother tree with a broad, low spreading crown. This tree is large compared with ordinary trees yet much smaller than the distant dome ceiling; enormous empty air separates its crown from the roof. The roof remains transparent, with believable thin distant curved ribs and glass divisions receding into atmospheric haze; show its enclosing curve and opposing sides so it cannot read as open sky or an ordinary greenhouse. Soft overcast daylight passes through glass; a little distant ground mist, not thick fog hiding the scene. Strong foreground/middle-distance/far-distance scale layering. Muted organic greens, ivory, wet gray-brown stone; natural photographic exposure, quiet 35mm grain. A very small old town, if visible, must be entirely inside one small secondary glass greenhouse far from the foreground; vegetation and wilderness dominate the composition.
+Use a believable large-format film location photograph with restrained practical-VFX realism. No futuristic clean geodesic museum atrium, shopping mall, luxury resort, city skyline, modern streets, theme-park gates, logos, dinosaurs, giant animals, exterior open-sky landscape, cutaway roof, roof holes, multi-panel layout, captions or watermark. No saturated fantasy glow or videogame render. This is a static reference frame, not a video or a camera-motion diagram.
+
+Camera option 3: elevated rocky bank above a broad river bend, rectilinear 28mm lens, wide oblique panorama. The reflective river makes a clear S curve from bottom left through layered fern-covered islands toward the ivory mother tree slightly right of center. Dense wild vegetation blankets the opposite slopes. The river reflects faint curving glass roof ribs, while the actual distant transparent dome spans the upper half. Water, terrain and canopy form three legible depth layers. No waterfall spectacle or buildings in the foreground.
+```
+
+
+### IMG-013｜ACT 1 SCENE 01 全景案：岩稜越しの原生林全景
+
+- 日付（日本時間）：2026-10-16
+- 対象：ACT 1 SCENE 01「花の街」、シーン内4〜8秒の全景リファレンス候補。
+- 参照ストーリー版：Ver.4＋2026-10-16の会話更新、作業基点07c3a1a。
+- 状態：内蔵 image_gen で画像生成実行済み。出力を目視確認しPNGを保存。ユーザーの採用は未確定、動画生成は未実施。
+- 設定：横長16:9をプロンプトで指定。実出力1672×941px。背景不透明。
+- 参照画像：入力なし。共有英文・脚本・今回の世界観指定から新規生成。人物や未取得のキャラクター画像は使用していない。
+- 出力：[画像](assets/act1_scene01_dome_options/04_rocky_basin.png) ／ [5案比較](assets/act1_scene01_dome_options/README.md)
+- 生成元ファイル名：exec-691b36ef-0f0f-4331-a1e1-d74c08695359.png
+- SHA-256：c4fab7ec5ce78be2c4212bca789af64de7c774200272e2a0f2d8af522526f6f7
+- 視点・地形・河川・小型温室の配置は今回の比較案。別々の生成であり、5枚の地理的一致は保証しない。ドームの厳密な寸法は指定していない。
+
+#### プロンプト全文
+
+```text
+Photorealistic live-action Japanese dark fantasy mystery film, grounded cinematic realism, intimate and haunting atmosphere, subtle biological horror, beautiful yet deeply unsettling.
+Authentic Japanese teenage characters with natural facial proportions, realistic East Asian features, subtle facial asymmetry, natural skin pores, delicate skin texture, faint blemishes, realistic complexion, restrained makeup, natural dark hair with individual strands and subtle imperfections.
+Minimalist vintage Japanese-inspired clothing, simple silhouettes, natural cotton and linen fabrics, slightly worn textures, muted ivory, warm off-white, faded olive gray, earthy taupe, desaturated brown and restrained dark crimson accents.
+Soft diffused natural lighting, delicate shadow transitions, subdued highlights, realistic exposure, rich but restrained tonal depth, slightly desaturated organic color grading, soft warm skin tones, pale neutral whites, deep botanical greens, natural cinematic contrast.
+Naturalistic film cinematography, subtle 35mm film grain, realistic photographic textures, gentle depth of field, atmospheric perspective, physically believable environments and materials, carefully composed frames, quiet visual storytelling.
+A world where overwhelming natural beauty coexists with grotesque biological abnormalities. Organic life feels elegant, sacred and disturbingly unfamiliar. White flowers, delicate translucent leaves, abnormal plant anatomy, faint crimson veins, subtle signs of genetic alteration.
+Restrained performances, believable body language, subtle facial expressions, psychological tension conveyed through silence, observation and physical details rather than exaggerated acting.
+Premium independent Japanese live-action fantasy cinema, visually cohesive, understated, atmospheric, emotionally unsettling, anatomically convincing, never glossy or overly stylized.
+Preserve the exact identities, hairstyles, facial landmarks, costume silhouettes, clothing materials and proportions established by the provided character reference images.
+Adapt camera angle, shot scale, lighting and environment to the specific scene while maintaining one consistent cinematic visual language.
+
+Create ONE landscape 16:9 cinematic reference image, no collage, no storyboard panels, no text. This is the opening establishing view for ACT 1 SCENE 01, its local 4–8 second portion, of the original film KAERIZAKI. Environment only: no people or character sheets. The view must immediately explain an immense enclosed wilderness, the central area of a colossal transparent glass dome. Convey primal expedition awe and majestic yet uneasy biological beauty through an original location.
+Inside one continuous enormous aged iron-and-glass dome is an entire kilometer-scale landscape: deep botanical-green jungle, giant ferns, mossy rock, irregular weathered terrain, pale wild grass clearings, scattered small white flowers, a winding narrow river and a central ivory-white mother tree with a broad, low spreading crown. This tree is large compared with ordinary trees yet much smaller than the distant dome ceiling; enormous empty air separates its crown from the roof. The roof remains transparent, with believable thin distant curved ribs and glass divisions receding into atmospheric haze; show its enclosing curve and opposing sides so it cannot read as open sky or an ordinary greenhouse. Soft overcast daylight passes through glass; a little distant ground mist, not thick fog hiding the scene. Strong foreground/middle-distance/far-distance scale layering. Muted organic greens, ivory, wet gray-brown stone; natural photographic exposure, quiet 35mm grain. A very small old town, if visible, must be entirely inside one small secondary glass greenhouse far from the foreground; vegetation and wilderness dominate the composition.
+Use a believable large-format film location photograph with restrained practical-VFX realism. No futuristic clean geodesic museum atrium, shopping mall, luxury resort, city skyline, modern streets, theme-park gates, logos, dinosaurs, giant animals, exterior open-sky landscape, cutaway roof, roof holes, multi-panel layout, captions or watermark. No saturated fantasy glow or videogame render. This is a static reference frame, not a video or a camera-motion diagram.
+
+Camera option 4: dramatic but grounded diagonal panorama from an ancient rocky escarpment inside the dome, rectilinear 24mm lens. A rugged ravine crosses the lower third, an extremely small overgrown iron-and-glass footbridge gives scale, beyond it the immense central forested basin opens wide with the white mother tree in the distance. A few ancient leaning trunks and stone ledges at one edge give depth. The curving dome roof and far enclosing wall are unmistakable and very remote. Camera remains level, no Dutch angle. Emphasize wild geology, tiny bridge and colossal shelter.
+```
+
+
+### IMG-014｜ACT 1 SCENE 01 全景案：高所俯瞰で示すドーム内部
+
+- 日付（日本時間）：2026-10-16
+- 対象：ACT 1 SCENE 01「花の街」、シーン内4〜8秒の全景リファレンス候補。
+- 参照ストーリー版：Ver.4＋2026-10-16の会話更新、作業基点07c3a1a。
+- 状態：内蔵 image_gen で画像生成実行済み。出力を目視確認しPNGを保存。ユーザーの採用は未確定、動画生成は未実施。
+- 設定：横長16:9をプロンプトで指定。実出力1672×941px。背景不透明。
+- 参照画像：入力なし。共有英文・脚本・今回の世界観指定から新規生成。人物や未取得のキャラクター画像は使用していない。
+- 出力：[画像](assets/act1_scene01_dome_options/05_high_oblique.png) ／ [5案比較](assets/act1_scene01_dome_options/README.md)
+- 生成元ファイル名：exec-884a896b-322f-4a60-8540-dca6f2c46030.png
+- SHA-256：208c37cf34eb0d2c5e1c5dba373a1bc544c6b0f4a1f1b62765a0e78994e37ced
+- 視点・地形・河川・小型温室の配置は今回の比較案。別々の生成であり、5枚の地理的一致は保証しない。ドームの厳密な寸法は指定していない。
+
+#### プロンプト全文
+
+```text
+Photorealistic live-action Japanese dark fantasy mystery film, grounded cinematic realism, intimate and haunting atmosphere, subtle biological horror, beautiful yet deeply unsettling.
+Authentic Japanese teenage characters with natural facial proportions, realistic East Asian features, subtle facial asymmetry, natural skin pores, delicate skin texture, faint blemishes, realistic complexion, restrained makeup, natural dark hair with individual strands and subtle imperfections.
+Minimalist vintage Japanese-inspired clothing, simple silhouettes, natural cotton and linen fabrics, slightly worn textures, muted ivory, warm off-white, faded olive gray, earthy taupe, desaturated brown and restrained dark crimson accents.
+Soft diffused natural lighting, delicate shadow transitions, subdued highlights, realistic exposure, rich but restrained tonal depth, slightly desaturated organic color grading, soft warm skin tones, pale neutral whites, deep botanical greens, natural cinematic contrast.
+Naturalistic film cinematography, subtle 35mm film grain, realistic photographic textures, gentle depth of field, atmospheric perspective, physically believable environments and materials, carefully composed frames, quiet visual storytelling.
+A world where overwhelming natural beauty coexists with grotesque biological abnormalities. Organic life feels elegant, sacred and disturbingly unfamiliar. White flowers, delicate translucent leaves, abnormal plant anatomy, faint crimson veins, subtle signs of genetic alteration.
+Restrained performances, believable body language, subtle facial expressions, psychological tension conveyed through silence, observation and physical details rather than exaggerated acting.
+Premium independent Japanese live-action fantasy cinema, visually cohesive, understated, atmospheric, emotionally unsettling, anatomically convincing, never glossy or overly stylized.
+Preserve the exact identities, hairstyles, facial landmarks, costume silhouettes, clothing materials and proportions established by the provided character reference images.
+Adapt camera angle, shot scale, lighting and environment to the specific scene while maintaining one consistent cinematic visual language.
+
+Create ONE landscape 16:9 cinematic reference image, no collage, no storyboard panels, no text. This is the opening establishing view for ACT 1 SCENE 01, its local 4–8 second portion, of the original film KAERIZAKI. Environment only: no people or character sheets. The view must immediately explain an immense enclosed wilderness, the central area of a colossal transparent glass dome. Convey primal expedition awe and majestic yet uneasy biological beauty through an original location.
+Inside one continuous enormous aged iron-and-glass dome is an entire kilometer-scale landscape: deep botanical-green jungle, giant ferns, mossy rock, irregular weathered terrain, pale wild grass clearings, scattered small white flowers, a winding narrow river and a central ivory-white mother tree with a broad, low spreading crown. This tree is large compared with ordinary trees yet much smaller than the distant dome ceiling; enormous empty air separates its crown from the roof. The roof remains transparent, with believable thin distant curved ribs and glass divisions receding into atmospheric haze; show its enclosing curve and opposing sides so it cannot read as open sky or an ordinary greenhouse. Soft overcast daylight passes through glass; a little distant ground mist, not thick fog hiding the scene. Strong foreground/middle-distance/far-distance scale layering. Muted organic greens, ivory, wet gray-brown stone; natural photographic exposure, quiet 35mm grain. A very small old town, if visible, must be entirely inside one small secondary glass greenhouse far from the foreground; vegetation and wilderness dominate the composition.
+Use a believable large-format film location photograph with restrained practical-VFX realism. No futuristic clean geodesic museum atrium, shopping mall, luxury resort, city skyline, modern streets, theme-park gates, logos, dinosaurs, giant animals, exterior open-sky landscape, cutaway roof, roof holes, multi-panel layout, captions or watermark. No saturated fantasy glow or videogame render. This is a static reference frame, not a video or a camera-motion diagram.
+
+Camera option 5: high oblique aerial viewpoint INSIDE the dome, well below the glass ceiling, rectilinear 26mm lens pitched gently down at the entire central basin. An immense curved strip of transparent roof and far dome wall remains visible at the top and both sides, no cutaway. Show the central white spreading tree, a winding river around it, alternating jungle masses and wild rocky clearings, one tiny secondary greenhouse town at the distant edge. A clear legible environmental geography, not a map or miniature. The ground feels hundreds of metres below. Very fine roof ribs and layered distance haze express tremendous scale.
+```
