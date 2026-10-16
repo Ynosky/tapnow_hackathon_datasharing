@@ -7,6 +7,7 @@
 | ファイル・フォルダ | 内容 |
 | --- | --- |
 | [story.md](story.md) | 最新のストーリー、世界観、人物、脚本、演出方針、更新履歴 |
+| [feedback.md](feedback.md) | チャットで受けた変更点・反省点のログと、制作の嗜好のまとめ |
 | [image_prompts.md](image_prompts.md) | 画像生成プロンプトの全文と改訂履歴 |
 | [video_prompts.md](video_prompts.md) | 動画生成プロンプトの全文と改訂履歴 |
 | [sources/](sources/) | 受領した元資料。新しい版を受け取っても旧版を保持 |
