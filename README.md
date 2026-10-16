@@ -11,6 +11,7 @@
 | [video_prompts.md](video_prompts.md) | 動画生成プロンプトの全文と改訂履歴 |
 | [sources/](sources/) | 受領した元資料。新しい版を受け取っても旧版を保持 |
 | [assets/](assets/) | 参考画像などの制作素材 |
+| [archive/](archive/README.md) | 試作など、現行制作から外した資料 |
 | [AGENTS.md](AGENTS.md) | 会話で追加された情報を保存するための作業ルール |
 
 ## 継続保存のルール
@@ -32,9 +33,9 @@
 - 世界観の参考画像：[world-reference.jpg](assets/world-reference.jpg)
 - キャラクターの参考画像：[character-reference.jpg](assets/character-reference.jpg)
 - 画像プロンプトの必須共通冒頭文：`image_prompts.md` に保存済み
-- 過去の制作 Markdown：12件を [資料索引](sources/README.md) と [原本フォルダ](sources/2026-10-16/) に保存
+- 過去の制作 Markdown：12件を受領。[資料索引](sources/README.md) に一覧を記録し、原本は `sources/` に9件・`archive/` に試作3件を保存
 - 画像用と確認できる過去プロンプト：9件（`IMG-001`～`IMG-009`）を [image_prompts.md](image_prompts.md) に原文のまま集約
-- 用途未確認のカット資料：3件（線路の導入・傷跡がない手首・指切りと花びら）。ユーザー指定により用途未確認のまま保持。原本を保存し、[索引](sources/README.md#用途未確認のカット資料) に記録
+- 試作カット資料：3件（線路の導入・傷跡がない手首・指切りと花びら）。ユーザー指定により [archive/](archive/README.md) へ移動済み。現行の制作候補・分類待ちから除外
 - 動画プロンプト：最新は **VID-003・実験室のみ15秒**。旧24秒版VID-001・VID-002も [video_prompts.md](video_prompts.md) に全文保存。動画生成は未実施
 - PROLOGUEコピー用：[実験室のみ15秒.md](prompts/PROLOGUE_実験室のみ_15秒_プロンプトのみ.md)。問診7秒＋目元2秒＋返答6秒。グリッチ2秒＋4秒とタイトル3秒は後編集で組み合わせ、完成版24秒にする。ユナ・研究所の参照画像実体は未取得
 - 動画の共通英文10段落、旧プロンプト本文、今回の改訂指示・手元だけの指切りという追加回答を [資料索引](sources/README.md) に追加
