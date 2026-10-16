@@ -2,7 +2,7 @@
 
 『返り咲き』の動画生成用プロンプトを追記して管理します。現在のストーリーは [story.md](story.md)、画像用は [image_prompts.md](image_prompts.md) を参照してください。
 
-PROLOGUEの旧版をVID-001、今回の改訂案をVID-002として保存しています。脚本のシーン本文と動画生成用プロンプトは区別して管理します。コピー用の最新案は [PROLOGUE_24秒_プロンプトのみ.md](prompts/PROLOGUE_24秒_プロンプトのみ.md) です。
+現在の生成用は **VID-003：実験室のみ15秒** です。旧24秒版VID-001・VID-002は履歴として保持します。完成版の24秒と今回生成する15秒を区別してください。コピー用：[PROLOGUE_実験室のみ_15秒_プロンプトのみ.md](prompts/PROLOGUE_実験室のみ_15秒_プロンプトのみ.md)。
 
 2026-10-16 に受領した3件のカット資料は用途と対象モデルが未確認のため、[資料索引](sources/README.md#用途未確認のカット資料) に全文のある原本を保存しています。動き・音・台詞があることだけを理由に動画用と断定していません。
 
@@ -262,4 +262,93 @@ BGMなし。劇伴、歌唱、子守歌、旋律、音楽的ドローン、音�
 
 研究者は画面外の声のみ。ユナに研究者の台詞を話させない。指定した三つの台詞以外の発話、字幕、説明テロップ、識別番号は入れない。画面文字は最後の「返り咲き」だけ。
 グリッチは編集上の断絶として表現し、顔・身体・衣装の変形にしない。手指の本数と関節を保ち、指切りの接触で手を融合させない。
+```
+
+
+### VID-003｜PROLOGUE・実験室のみ15秒
+
+- 日付（日本時間）：2026-10-16
+- 対象：00-1 問診7秒、00-2 目元2秒、00-4 返答6秒。合計15秒・1生成。
+- 参照ストーリー版：Ver.4＋当チャットのプロローグ改訂と実験室のみ生成の指示。
+- 改訂元ID：VID-002。旧24秒稿は原文のまま保持。
+- 状態：プロンプト作成のみ。動画生成・結果確認は未実施。
+- 尺の計算：24−2−4＝18秒（タイトル込み）。「実験室のみ」という指定に合わせてタイトル3秒も別編集と解釈し、今回の生成は18−3＝15秒。完成版からのシーン削除ではない。
+- 設定：Kling 4.0、Reference to Video、15秒。16:9は前稿から引き継ぐ仮設定。
+- 参照：ユナ、白い研究所のみ。画像実体の未取得状態は前稿と同じ。キメラ・相手の人物参照はこの生成では使用しない。
+- 台詞は前稿どおり。00-4の時間を2秒前へ移し、生成素材内9–15秒に配置。
+- 連続性：同じ人物・室内・照明、正面固定→目元→同一正面固定。空調を連続させ、通常のカットで接続。
+- 後編集：15秒素材を9秒で分け、そこへ00-3の2秒を挿入。実験室素材の後へ00-5の4秒とタイトル3秒を接続すると24秒。素材の生成済み・検収済みとは主張しない。
+- 目元の赤い反射は実験室の動作として残す。グリッチ・指切り・キメラ・タイトル・暗転は今回の生成対象外。
+- [コピー用MD](prompts/PROLOGUE_実験室のみ_15秒_プロンプトのみ.md)
+
+#### プロンプト全文
+
+```text
+【参照素材】
+ユナ：@ユナ（人物の顔・髪・衣装・体格の参照）
+白い研究所：@白い研究所（室内・椅子・配置・素材・照明の参照）
+以降は素材名だけを使い、同じ参照を全編で維持する。
+
+Photorealistic live-action Japanese dark fantasy mystery film, grounded cinematic realism, intimate and haunting atmosphere, subtle biological horror, beautiful yet deeply unsettling.
+
+Authentic Japanese teenage characters with natural facial proportions, realistic East Asian features, subtle facial asymmetry, natural skin pores, delicate skin texture, faint blemishes, realistic complexion, restrained makeup, natural dark hair with individual strands and subtle imperfections.
+
+Minimalist vintage Japanese-inspired clothing, simple silhouettes, natural cotton and linen fabrics, slightly worn textures, muted ivory, warm off-white, faded olive gray, earthy taupe, desaturated brown and restrained dark crimson accents.
+
+Soft diffused natural lighting, delicate shadow transitions, subdued highlights, realistic exposure, rich but restrained tonal depth, slightly desaturated organic color grading, soft warm skin tones, pale neutral whites, deep botanical greens, natural cinematic contrast.
+
+Naturalistic film cinematography, subtle 35mm film grain, realistic photographic textures, gentle depth of field, atmospheric perspective, physically believable environments and materials, carefully composed frames, quiet visual storytelling.
+
+A world where overwhelming natural beauty coexists with grotesque biological abnormalities. Organic life feels elegant, sacred and disturbingly unfamiliar. White flowers, delicate translucent leaves, abnormal plant anatomy, faint crimson veins, subtle signs of genetic alteration.
+
+Restrained performances, believable body language, subtle facial expressions, psychological tension conveyed through silence, observation and physical details rather than exaggerated acting.
+
+Premium independent Japanese live-action fantasy cinema, visually cohesive, understated, atmospheric, emotionally unsettling, anatomically convincing, never glossy or overly stylized.
+
+Preserve the exact identities, hairstyles, facial landmarks, costume silhouettes, clothing materials and proportions established by the provided character reference images.
+
+Adapt camera angle, shot scale, lighting and environment to the specific scene while maintaining one consistent cinematic visual language.
+
+【生成設定】
+Kling 4.0、Reference to Video、15秒、16:9。
+白い研究所での「問診7秒→目元2秒→返答6秒」を、カットを含む1本の映像として1回で生成する。全編を同じ研究所内で撮影する。
+
+【人物・室内・連続性】
+ユナは身長170cm。人物参照の顔、髪、衣装、体格を全編で維持する。肌、髪、布は自然な実写の質感。画面内の人物はユナだけ。研究者は成人女性の画面外の声のみ。
+
+研究所は室内参照の壁、天井、椅子、設備、配置、照明、距離関係を維持する。室内参照にない窓や天窓、外の景色を加えない。共有の画風は質感と色調へ適用し、舞台はこの研究所内に固定する。人物・環境シートのパネル配置、文字、寸法線、見本のポーズは映像にしない。
+冒頭と最後の正面ショットは、カメラ位置、高さ、画角、椅子の位置、背景、照明、ユナの顔の角度、手と足の位置まで一致させる。空調音はカットをまたいで同じ音量・音色で続ける。
+
+【0–7秒｜シーン1：問診】
+50mm相当。座ったユナの目線の高さ、真正面からの固定カメラ。膝下まで入るミディアムワイド。ユナの周囲に静かな余白を残す。パン、ズーム、手ブレなし。
+
+ユナは少しだるそうに、顔と視線をやや斜め下へ向けている。暗く、無機質な真顔。眉や口角で感情を強調せず、唇は軽く閉じる。両手を腿に置き、足を床につける。瞬きはほぼない。
+
+0–1秒：微かな空調音と浅い呼吸だけ。
+1–2.8秒：画面外の落ち着いた女性研究者が、ナレーションのように平坦で単調な日本語で「具合はどうですか」。
+2.8–7秒：ユナは答えない。口を動かさず、視線も表情もほぼ変えない。吸いかけた息が一度だけ浅く途切れ、喉と胸がごく小さく動く。長く感じられる沈黙。カメラは固定を保つ。
+
+【7–9秒｜シーン2：目元】
+同じユナの両目を収める極端なクローズアップへ通常のハードカット。85mmマクロ相当、正面寄りの固定カメラ。頭の角度、光の向き、肌の色を前のショットから引き継ぐ。
+まつ毛と角膜の反射は見えるが、ユナの視線は何にも焦点を結んでいない。画面全体をぼかさない。
+
+7.3秒頃、両眼だけが本人の右へ、唐突でぎこちなく動いて止まる。頭は追従しない。動きのタイミングに不自然さを感じさせ、眼球の形や位置は人体として保つ。
+8.2–8.7秒、瞳の表面に細い赤い光が一瞬映り、消える。角膜上の小さな反射として見せ、虹彩そのものは発光させない。室内全体の照明や色は変わらない。
+微かな空調音と小さな吸気。音楽や衝撃音は入れない。
+
+【9–15秒｜シーン4：返答】
+9秒で、冒頭と完全に同じ正面固定のミディアムワイドへ通常のハードカット。研究所の位置関係、50mm相当の画角、ユナの姿勢、両手、足、背景、露出を一致させる。空調音を途切れさせない。
+
+9.2–10.7秒：同じ女性研究者が、同じ画面外の位置と単調な声で「どうされましたか」。
+10.7–12.2秒：沈黙。ユナの視線が元の斜め下へゆっくり戻る。顔は暗い真顔のまま、口は閉じている。
+12.2–14.2秒：ユナが暗いトーンの小さな声で「動揺していないです」。ほとんど抑揚をつけず、最小限の口の動きで、自然な日本語を話す。語尾を上げない。研究者は重ねて話さない。
+14.2–15秒：ユナは口を閉じ、同じ姿勢と表情で静止する。微かな呼吸と空調音を保ち、その正面画面のまま終える。
+
+【音・制約】
+BGMなし。劇伴、歌唱、子守歌、旋律、音楽的ドローンなし。
+音は指定した日本語の台詞、微かな呼吸、空調、自然な衣擦れだけ。研究者の声は画面外の同じ位置から聞こえ、ユナの声と明確に区別する。
+指定した三つの台詞以外の発話なし。研究者の台詞中、ユナは口を動かさない。
+
+全編で研究所の空間とユナの外見を維持する。グリッチ、記憶映像、指切り、キメラ、温室への場面転換、ガラスの破砕、電気ノイズを入れない。
+タイトル、字幕、テロップ、識別番号、画面文字なし。冒頭や末尾の黒画面、暗転、フェードなし。顔・身体・衣装を変形させない。
 ```
