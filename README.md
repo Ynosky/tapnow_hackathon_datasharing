@@ -38,7 +38,7 @@
 - 過去の制作 Markdown：12件を受領。[資料索引](sources/README.md) に一覧を記録し、原本は `sources/` に9件・`archive/` に試作3件を保存
 - 画像用と確認できる過去プロンプト：9件（`IMG-001`～`IMG-009`）を [image_prompts.md](image_prompts.md) に原文のまま集約
 - 試作カット資料：3件（線路の導入・傷跡がない手首・指切りと花びら）。ユーザー指定により [archive/](archive/README.md) へ移動済み。現行の制作候補・分類待ちから除外
-- 動画プロンプト：最新は **VID-004・実験室のみ15秒**（VID-003 の改訂）。旧24秒版VID-001・VID-002も [video_prompts.md](video_prompts.md) に全文保存。動画生成は未実施
+- 動画プロンプト：最新は **VID-005・実験室のみ15秒・7ショット構成**（VID-004 の改訂。[コピー用MD](prompts/CUT01_実験室15秒_VID-005_プロンプトのみ.md)）。旧24秒版VID-001・VID-002も [video_prompts.md](video_prompts.md) に全文保存。動画生成は未実施
 - cut1 の改訂版：`VID-004`（実験室のみ15秒に参照素材の固定文・研究室環境シート・蛍光灯の激しい点滅を反映。Tapnow の Kling 4.0・Omni Reference 用）。[コピー用MD](prompts/CUT01_実験室15秒_VID-004_プロンプトのみ.md)
 - PROLOGUEコピー用：[実験室のみ15秒.md](prompts/PROLOGUE_実験室のみ_15秒_プロンプトのみ.md)。問診7秒＋目元2秒＋返答6秒。グリッチ2秒＋4秒とタイトル3秒は後編集で組み合わせ、完成版24秒にする。ユナ・研究所の参照画像実体は未取得
 - 動画の共通英文10段落、旧プロンプト本文、今回の改訂指示・手元だけの指切りという追加回答を [資料索引](sources/README.md) に追加
