@@ -39,7 +39,7 @@
 - 過去の制作 Markdown：12件を受領。[資料索引](sources/README.md) に一覧を記録し、原本は `sources/` に9件・`archive/` に試作3件を保存
 - 画像用と確認できる過去プロンプト：9件（`IMG-001`～`IMG-009`）を [image_prompts.md](image_prompts.md) に原文のまま集約
 - 試作カット資料：3件（線路の導入・傷跡がない手首・指切りと花びら）。ユーザー指定により [archive/](archive/README.md) へ移動済み。現行の制作候補・分類待ちから除外
-- 追加シーン「金色の草原を走る二人」の動画プロンプト：`VID-009`（[コピー用MD](prompts/SCENE_金色の草原を走る二人_VID-009_プロンプトのみ.md)）。動画生成は未実施
+- 追加シーン「金色の草原を走る二人」の動画プロンプト：最新 `VID-010`（[コピー用MD](prompts/SCENE_金色の草原を走る二人_VID-010_プロンプトのみ.md)）、旧版 `VID-009`（[コピー用MD](prompts/SCENE_金色の草原を走る二人_VID-009_プロンプトのみ.md)）。動画生成は未実施
 - 地下の根の小舟（別案）：参照画像3点（[assets/underground_root_boats/](assets/underground_root_boats/)）、Seedream 5.0 用 `IMG-019`（[コピー用MD](prompts/SCENE_地下の根の小舟_IMG-019_プロンプトのみ.md)）。画像生成は未実施
 - 地下の繭の間：参照画像3点（[assets/cocoon_hall/](assets/cocoon_hall/)）、ユーザー提供の色調テキスト（[原文](sources/2026-10-17/cocoon_hall_color_grade_user_text.md)）、Seedream 5.0 用の環境1枚絵 `IMG-018`（[コピー用MD](prompts/SCENE_地下の繭の間_IMG-018_プロンプトのみ.md)）。画像生成は未実施
 - 追加シーン「母樹への運び込みと返り咲き」の動画プロンプト：`VID-008`（[コピー用MD](prompts/SCENE_母樹への運び込みと返り咲き_VID-008_プロンプトのみ.md)）。動画生成は未実施
