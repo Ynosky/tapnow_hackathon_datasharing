@@ -39,6 +39,7 @@
 - 過去の制作 Markdown：12件を受領。[資料索引](sources/README.md) に一覧を記録し、原本は `sources/` に9件・`archive/` に試作3件を保存
 - 画像用と確認できる過去プロンプト：9件（`IMG-001`～`IMG-009`）を [image_prompts.md](image_prompts.md) に原文のまま集約
 - 試作カット資料：3件（線路の導入・傷跡がない手首・指切りと花びら）。ユーザー指定により [archive/](archive/README.md) へ移動済み。現行の制作候補・分類待ちから除外
+- 地下の繭の間：参照画像3点（[assets/cocoon_hall/](assets/cocoon_hall/)）、ユーザー提供の色調テキスト（[原文](sources/2026-10-17/cocoon_hall_color_grade_user_text.md)）、Seedream 5.0 用の環境1枚絵 `IMG-018`（[コピー用MD](prompts/SCENE_地下の繭の間_IMG-018_プロンプトのみ.md)）。画像生成は未実施
 - 追加シーン「母樹への運び込みと返り咲き」の動画プロンプト：`VID-008`（[コピー用MD](prompts/SCENE_母樹への運び込みと返り咲き_VID-008_プロンプトのみ.md)）。動画生成は未実施
 - 追加シーン「母樹からの誕生・霧の朝」の画像キーフレーム：`IMG-015`〜`IMG-017`（[コピー用MD](prompts/SCENE_母樹からの誕生_キーフレーム_プロンプトのみ.md)）。画像生成は未実施
 - 動画プロンプト：最新は **VID-007・実験室のみ15秒・14ショット構成**（VID-006 の改訂。[コピー用MD](prompts/CUT01_実験室15秒_VID-007_プロンプトのみ.md)）。旧24秒版VID-001・VID-002も [video_prompts.md](video_prompts.md) に全文保存。動画生成は未実施
