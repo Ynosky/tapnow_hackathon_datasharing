@@ -8,6 +8,7 @@
 | --- | --- |
 | [story.md](story.md) | 最新のストーリー、世界観、人物、脚本、演出方針、更新履歴 |
 | [feedback.md](feedback.md) | チャットで受けた変更点・反省点のログと、制作の嗜好のまとめ |
+| [catchcopy.md](catchcopy.md) | キャッチコピー案と、その根拠にした研究・作り方の原則 |
 | [image_prompts.md](image_prompts.md) | 画像生成プロンプトの全文と改訂履歴 |
 | [video_prompts.md](video_prompts.md) | 動画生成プロンプトの全文と改訂履歴 |
 | [sources/](sources/) | 受領した元資料。新しい版を受け取っても旧版を保持 |
@@ -39,6 +40,7 @@
 - 過去の制作 Markdown：12件を受領。[資料索引](sources/README.md) に一覧を記録し、原本は `sources/` に9件・`archive/` に試作3件を保存
 - 画像用と確認できる過去プロンプト：9件（`IMG-001`～`IMG-009`）を [image_prompts.md](image_prompts.md) に原文のまま集約
 - 試作カット資料：3件（線路の導入・傷跡がない手首・指切りと花びら）。ユーザー指定により [archive/](archive/README.md) へ移動済み。現行の制作候補・分類待ちから除外
+- キャッチコピー案（2026-10-17）：推奨3案＋候補4案と根拠研究を [catchcopy.md](catchcopy.md) に保存。採用は未確定
 - 追加シーン「金色の草原を走る二人」の動画プロンプト：最新 `VID-010`（[コピー用MD](prompts/SCENE_金色の草原を走る二人_VID-010_プロンプトのみ.md)）、旧版 `VID-009`（[コピー用MD](prompts/SCENE_金色の草原を走る二人_VID-009_プロンプトのみ.md)）。動画生成は未実施
 - 地下の根の小舟（別案）：参照画像3点（[assets/underground_root_boats/](assets/underground_root_boats/)）、Seedream 5.0 用 `IMG-019`（[コピー用MD](prompts/SCENE_地下の根の小舟_IMG-019_プロンプトのみ.md)）。画像生成は未実施
 - 地下の繭の間：参照画像3点（[assets/cocoon_hall/](assets/cocoon_hall/)）、ユーザー提供の色調テキスト（[原文](sources/2026-10-17/cocoon_hall_color_grade_user_text.md)）、Seedream 5.0 用の環境1枚絵 `IMG-018`（[コピー用MD](prompts/SCENE_地下の繭の間_IMG-018_プロンプトのみ.md)）。画像生成は未実施
